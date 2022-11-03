@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Barlow:wght@400;600;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	max-width: 1240px;
+	padding: 0px 20px;
+	margin: 0 auto;
+	position: relative;
+}
+
+body {
+	background-color: greenyellow;
+}
+
+.box {
+	position: absolute;
+	top: 100px;
+
+	width: 100px;
+	height: 100px;
+	background-color: gold;
+
+	border-radius: 5px;
+
+	animation-name: anime;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.animate-charcter {
+	position: absolute;
+	top: 350px;
+	left: 320px;
+
+	text-transform: uppercase;
+	background-image: linear-gradient(
+		-225deg,
+		#231557 0%,
+		#44107a 29%,
+		#ff1361 67%,
+		#fff800 100%
+	);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+	color: #fff;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 2s linear infinite;
+	display: inline-block;
+	font-size: 100px;
+	font-family: "Akaya Telivigala";
+}
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+@keyframes anime {
+	0% {
+		background-color: red;
+		left: 0px;
+		top: 100px;
+	}
+	12% {
+		background-color: yellow;
+		left: 300px;
+		top: 100px;
+		box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.5);
+	}
+	23% {
+		background-color: blue;
+		left: 400px;
+		top: 200px;
+		box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+	}
+	34% {
+		background-color: green;
+		left: 700px;
+		top: 200px;
+		box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+	}
+	45% {
+		background-color: red;
+		left: 700px;
+		top: 90px;
+	}
+	56% {
+		background-color: chocolate;
+		left: 1000px;
+		top: 90px;
+	}
+	67% {
+		background-color: fuchsia;
+		left: 1100px;
+		top: 300px;
+	}
+	78% {
+		background-color: aquamarine;
+		left: 1100px;
+		top: 500px;
+	}
+	89% {
+		background-color: gray;
+		left: 0px;
+		top: 500px;
+		box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.5);
+	}
+	100% {
+		background-color: red;
+		left: 0px;
+		top: 100px;
+		box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.5);
+	}
+}
